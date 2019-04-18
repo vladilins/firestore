@@ -11,6 +11,9 @@ export const environment = {
     projectId: "firestore-61bdd",
     storageBucket: "firestore-61bdd.appspot.com",
     messagingSenderId: "585651487737"
+  },
+  dialogflow: {
+    angularBot: "31215a71440540b9b2a14dc7cc1e4b5f"
   }
 };
 
