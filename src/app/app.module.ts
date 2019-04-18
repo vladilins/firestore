@@ -14,7 +14,9 @@ import { ItemService } from "./service/item.service";
 import { NavbarComponent } from "./components/navbar/navbar.component";
 import { AddItemComponent } from "./components/add-item/add-item.component";
 import { FormsModule } from "@angular/forms";
-import { UserProfileComponent } from './components/user-profile/user-profile.component';
+import { UserProfileComponent } from "./components/user-profile/user-profile.component";
+import { ToasterModule } from "angular2-toaster";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { UserProfileComponent } from './components/user-profile/user-profile.com
     AngularFirestoreModule, // imports firebase/firestore, only needed for database features
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features,
     AngularFireStorageModule, // imports firebase/storage only needed for storage features
-    FormsModule
+    FormsModule,
+    ToasterModule.forRoot(),
+    BrowserAnimationsModule
   ],
   providers: [ItemService],
   bootstrap: [AppComponent]
