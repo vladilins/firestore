@@ -1,7 +1,11 @@
 <nav>
   <div class="nav-wrapper black">
-    <a href="#" class="brand-logo center">
+    <a href="#" class="brand-logo left">
       FS Item Manager
     </a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a [routerLink]="['/items']">Items</a></li>
+      <li><a [routerLink]="['/login']">Login</a></li>
+    </ul>
   </div>
 </nav>

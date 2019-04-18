@@ -14,13 +14,15 @@ import { ItemService } from "./service/item.service";
 import { NavbarComponent } from "./components/navbar/navbar.component";
 import { AddItemComponent } from "./components/add-item/add-item.component";
 import { FormsModule } from "@angular/forms";
+import { UserProfileComponent } from './components/user-profile/user-profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ItemsComponent,
     NavbarComponent,
-    AddItemComponent
+    AddItemComponent,
+    UserProfileComponent
   ],
   imports: [
     BrowserModule,
